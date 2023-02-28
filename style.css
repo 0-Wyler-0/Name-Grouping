@@ -220,8 +220,11 @@ body {
 }
 
 @media screen and (max-width:680px) {
-    p {
-      font-size: 0.6rem;
+    label {
+        font-size: .6em;
+    }
+    .grpt {
+        font-size: .6em;
     }
 }
 
