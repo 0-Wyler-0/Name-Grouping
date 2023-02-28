@@ -219,7 +219,7 @@ body {
     }
 }
 
-@media screen and (max-width:680px) {
+@media all and (max-width:680px) {
     label {
         font-size: .6em;
     }
@@ -228,13 +228,23 @@ body {
         font-size: .6em;
 
     }
+    button {
+        font-size: .6em;
+        height: 20px;
+    }
+    #grn-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+    }
     #group-input {
-        width: 30%;
+        width: 20px;
         background-color: #44a9f4;
     }
     
     #grn {
-        width: 30%;
+        width: 20px;
         background-color: #44a9f4;
     }
     .grpt {
