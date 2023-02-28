@@ -67,10 +67,6 @@ grnBtn.addEventListener('click', () =>{
         ffs.id = 'name' + count;
         ffs.classList = 'all-names'
 
-        //nameUnits.push(count)
-        //if (count >= grnInput - 1) {
-        //    count=-1
-        //}
 
         if (Coin === 0) {
             ffs.innerText = randomFemaleNames[Randomizer] + ' ' + randomLastNames[Randomizer]
@@ -104,23 +100,19 @@ addNameBtn.addEventListener('click', () => {
     let nameLength = document.querySelectorAll('.all-names').length;
     if (nameInput.value !== '') {
         count = count + 1;
-        const paragraph = document.createElement('p')
+        const paragraph = document.createElement('p');
         paragraph.innerText = nameInput.value;
-        paragraph.id = 'name' + parseInt(nameLength + count);
+        paragraph.id = 'name' + parseInt(nameLength);
         paragraph.className = "all-names";
 
-        //const nmbr = document.createElement('p');
-        //nmbr.innerText = '0' + count;
-        //nmbr.id = 'number' + count;
-        //nmbr.className = "all-sums";
 
         const nmbr = document.createElement('p')
         if (parseInt(nameLength + count) >= 10) {
-            nmbr.innerText = parseInt(nameLength + count)
-            nmbr.id = 'number' + parseInt(nameLength + count);
+            nmbr.innerText = parseInt(nameLength)
+            nmbr.id = 'number' + parseInt(nameLength);
         } else {
-            nmbr.innerText = '0' + parseInt(nameLength + count)
-            nmbr.id = 'number' + parseInt(nameLength + count);
+            nmbr.innerText = '0' + parseInt(nameLength)
+            nmbr.id = 'number' + parseInt(nameLength);
         }
         nmbr.className = "all-sums";
 
@@ -128,8 +120,7 @@ addNameBtn.addEventListener('click', () => {
         nameList.appendChild(paragraph);
         nameInput.value = '';
         }
-        nameInput.focus();
-        addNameBtn.click();
+
 })
 
 
