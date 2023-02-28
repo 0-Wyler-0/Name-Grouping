@@ -223,6 +223,10 @@ body {
     label {
         font-size: .6em;
     }
+    input {
+        height: 10px;
+        font-size: .6em;
+    }
     .grpt {
         font-size: .6em;
     }
