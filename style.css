@@ -1,0 +1,222 @@
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, 
+p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, 
+ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, 
+ol, ul, li, fieldset, form, label, legend, table, caption, tbody, 
+tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, 
+figure, footer, header, hgroup, menu, nav, section, summary, time, 
+mark, audio, video {
+ margin:0; 
+ padding:0; 
+ border:0; 
+ outline:0; 
+ font-size:100%; 
+ vertical-align:baseline; 
+ background:transparent; 
+ color: white;
+                    }
+body {
+    background-color: brown;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#contain {
+
+    height: 80%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "a b"
+                        "a b";
+    justify-content: center;
+}
+
+.mainboxes {
+    background-color: #0055a9;
+    border: 5px #051729 solid;
+    margin-inline: 10px;
+}
+
+.operators {
+    min-height: 30%;
+    margin: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(2, 50%);
+    align-items: center;
+}
+
+.operator-sets {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 4px #051729 solid;
+    background-color: brown;
+    min-height: 60%;
+    max-width: 100%;
+    margin: 5px;
+}
+
+.operator-sets div,button {
+    margin: 5px;
+    
+}
+
+.operator-sets button {
+    background-color: #44a9f4;
+}
+
+.operator-sets button:hover {
+    background-color: rgb(216, 211, 202);
+    cursor: pointer;
+}
+
+.operator-sets button:active {
+    background-color: #64b2ee;
+}
+
+#remove-input {
+    width: 40px;
+    background-color: #44a9f4;
+}
+
+#group-input {
+    width: 30px;
+    background-color: #44a9f4;
+}
+
+#name-input {
+    width: 77%;
+    background-color: #44a9f4;
+}
+
+#grn {
+    width: 40px;
+    background-color: #44a9f4;
+}
+
+#names-space {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+}
+
+#names-area {
+    grid-area: a;
+    display: grid;
+    grid-template-columns: 15% 85%;
+    overflow-y: scroll;
+    min-height: 330px;
+
+}
+
+#name-list {
+    background-color: #44a9f4;
+    border: 4px #051729 solid;
+    text-align: center;
+    margin: 5px;
+}
+
+#name-list b{
+    font-size: 1.5rem;
+    color: #051729;
+}
+
+#name-list p{
+    color: #051729;
+    font-style: italic;
+    font-weight: bold;
+}
+
+#number-list {
+    background-color: #44a9f4;
+    border: 4px #051729 solid;
+    text-align: center;
+    margin: 5px;
+}
+
+#number-list p {
+    font-style: italic;
+    font-weight: bold;
+    color: #051729;
+}
+
+#number-list b {
+    font-size: 1.5rem;
+    color: #051729;
+}
+
+#grouping-area {
+    grid-area: b;
+    display: grid;
+    grid-template-columns: 15% 85%;
+    overflow-y: scroll;
+    max-height: 500px;
+}
+
+.grpn, .grpt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-inline: 5px;
+    margin-top: 7px;
+    border: 4px #810000 solid;
+    background-color: #44a9f4;
+    border-radius: 5px;
+    height: 20px;
+    font-style: italic;
+    font-weight: bold;
+    color: #051729;
+}
+
+
+
+.pp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 4px #051729 solid;
+    background-color: #44a9f4;
+    margin: 7px;
+    height: 150px;
+    overflow-y: scroll;
+}
+
+.ppn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 5px #051729 solid;
+    background-color: #44a9f4;
+    margin: 7px;
+    height: 150px;
+    overflow-y: scroll;
+}
+
+.pp p, .ppn p {
+    font-style: italic;
+    font-weight: bold;
+    color: #051729;
+}
+
+@media screen and (max-width:900px) {
+    .operator-sets {
+        max-height: 100%;
+    }
+}
+
+@media screen and (max-width:850px) {
+    #contain {
+        grid-template-columns: 1fr;
+        grid-template-areas: "a"
+                             "b";
+    }
+    #grouping-area {
+        height: 500px;
+        margin: 20px;
+    }
+}
+
+
