@@ -226,6 +226,16 @@ body {
     input {
         height: 10px;
         font-size: .6em;
+
+    }
+    #group-input {
+        width: 30%;
+        background-color: #44a9f4;
+    }
+    
+    #grn {
+        width: 30%;
+        background-color: #44a9f4;
     }
     .grpt {
         font-size: .6em;
